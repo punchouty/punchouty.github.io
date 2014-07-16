@@ -1,0 +1,57 @@
+/**
+ *   Page structure
+*/
+body{
+    margin: 0px;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+#header{
+    height: 25px;
+}
+
+#content{ 
+    background-color: white;
+    margin: auto;
+    width: 990px;
+    color: #666;
+    min-height: 300px;
+    display: table;
+}
+
+#footer{
+    height: 75px;
+}
+
+/**
+ * header.
+*/
+#header-content{
+    border-top: 6px black solid;
+    display: table;
+    width: 990px;
+    margin: auto;
+}
+#header-content span{
+	font-size: 20px;
+}
+
+/*
+ * Footer
+*/
+#footer-content{
+    width: 990px;
+    margin: auto;
+    height: 75px;
+    border-bottom: 6px black solid;
+
+}
+a:link {
+    color: #F15D22;
+}
+
+/* visited link */
+a:visited {
+    color: #F99D31;
+}

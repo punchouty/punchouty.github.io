@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Intractive Developer - Self Learning Program</title>
+        <link rel="shortcut icon" href="favicon.ico" />
+
+        <link rel="stylesheet" type="text/css" href="css/global.css">
+
+        <!-- jquery -->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+        <!-- fancy-timeline -->
+        <script type="text/javascript" src="js/fancy-timeline.js"></script>
+        <link type="text/css" href="css/ftl-default/fancy-timeline.css" rel="stylesheet" />
+
+    </head>
+    <body>
+
+        <!-- header -->
+        <div id="header">
+            <div id="header-content">
+                <span>Intractive Developer - Self Learning Program</span>
+            </div>
+        </div>
+
+        <!-- content -->
+        <div id="content">
+            <div id="container">
+                <div class="timeline-container"></div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div id="footer">
+            <div id="footer-content">
+                <a href="http://www.sapient.com" target="_blank"><img src="images/logo.jpg"></a>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                var dates = [
+                    {
+                        "marker": "Day 1",
+						"type": "default",
+                        "title": "Day 1" ,
+                        "content": "</br><img src=\"images/http-v2.jpg\" align=\"right\"><b>First Half</b><br> <b>Level</b> : Beginner <b>Category</b> : Design<br> <b>Course Name</b> : HTTP Fundametals <p>This course teaches everything a web dev should know about HTTP.It will cover resources, messages, cookies and authentication protocol.By the end of the course you will have the knowledge to build better web applications. <a href=\"http://pluralsight.com/training/courses/TableOfContents?courseName=xhttp-fund\" target=\"blank\"><b>Go to Pluralsight</b></a>.</p><b>Second Half</b><br><img src=\"images/html5.png\" align=\"right\"><b>Level</b> : Beginner  <b>Category</b> : HTML <b>Course Name</b> : HTML Fundamentals <p>HTML markup is the heart of any web application and this course will teach you the fundamentals of HTML.<a href=\"http://pluralsight.com/training/courses/TableOfContents?courseName=html-fundamentals\" target=\"blank\"><b>Go to Pluralsight</b></a></p>"
+                    },
+
+					{
+                        "marker": "Day 2",
+						"type": "default",
+                        "title": "Day 2" ,
+                        "content": "</br><img src=\"images/html5.png\" align=\"right\"> <b>First Half</b><br> <b>Level</b> : Beginner <b>Category</b> : HTML<br> <b>Course Name</b> : HTML Forms<p>You will learn how to create forms, all about the various input types, scripting forms and submitting files in forms.In addition this course introduces form processing with several popular frameworks including ASP.NET, PHP, and Ruby	<a href=\"http://pluralsight.com/training/courses/TableOfContents?courseName=html-forms\" target=\"blank\"><b>Go to Pluralsight</b></a> to access.</p><b>Second Half</b><br><img src=\"images/css.jpg\" align=\"right\"><b>Level</b> : Beginner   <b>Category</b> : CSS<br> <b>Course Name</b> : Introduction to CSS <p>This course introduces you to Cascading Style Sheets(CSS).<a href=\"http://pluralsight.com/training/courses/TableOfContents?courseName=css-intro\" target=\"blank\"><b>Go to Pluralsight</b><a/></p>"
+                    },					
+					{
+                        "marker": "Day 3",
+						"type": "default",
+                        "title": "Day 3" ,
+                        "content": "</br><img src=\"images/js.png\" align=\"right\"> <b>First Half</b><br> <b>Level</b> : Beginner <b>Category</b> : Java Script<br> <b>Course Name</b> : JavaScript From Scratch<p>Learn JavaScript with no prior programming experience.<a href=\"http://pluralsight.com/training/Courses/TableOfContents/javascript-from-scratch\" target=\"blank\"><b>Go to Pluralsight</b></a> </p><b>Second Half</b><br><img src=\"images/css.jpg\" align=\"right\"><b>Level</b> : Beginner   <b>Category</b> : CSS<br> <b>Course Name</b> : CSS 3 From Scratch <p>A Core introduction to the web standard for styling pages.CSS3 is the style standard for HTML5 and the web.It provides separation of markup from presentation and is key to creating modern web applications.<a href=\"http://pluralsight.com/training/courses/TableOfContents?courseName=css3-from-scratch\" target=\"blank\"><b>Go to Pluralsight</b><a/></p>"
+                    },					
+					{
+                        "marker": "Day 4",
+						"type": "default",
+                        "title": "Day 4" ,
+                        "content": "</br><img src=\"images/git.png\" width=\"110\" height=\"46\" align=\"right\"> <b>First Half</b><br> <b>Level</b> : Beginner <b>Category</b> : Tools<br> <b>Course Name</b> : Git Fundamentals<p>Getting started with Git.In this course you will learn how to work locally and remotely with Git.Also, this course will look at topics like Branching, Merging and Rebasing with Git.<a href=\"http://pluralsight.com/training/courses/TableOfContents?courseName=git-fundamentals\" target=\"blank\"><b>Go to Pluralsight</b></a> </p><b>Second Half</b><br><img src=\"images/js.png\" align=\"right\"><b>Level</b> : Intermediate   <b>Category</b> : Java Script<br> <b>Course Name</b> : Underscore.js Fundamentals <p>Learn to take control of JavaScript collections, arrays, functions and objects all while improving the performance of your code and making your JavaScript more readable and expressive.<a href=\"http://pluralsight.com/training/Courses/TableOfContents/underscore-fundamentals\" target=\"blank\"><b>Go to Pluralsight</b><a/></p>"
+                    },
+					{
+                        "marker": "Day 5",
+						"type": "default",
+						"type": "youtube-video",
+                        "title": "Day 5" ,
+						"youtubeId": "S9sktFzL3tQ",
+                        "content": "<b>Level</b> : Intermediate <b>Category</b> : Tools<br> <b>Course Name</b> : FireBug, Chrome Tools, and Fiddler<ul><li><a href=\"https://www.youtube.com/watch?v=BaneWEqNcpE\" target=\"blank\"><b>Chrome Developer Tools - I</b></a></li><li><a href=\"https://www.youtube.com/watch?v=S9sktFzL3tQ\" target=\"blank\"><b>Chrome Developer Tools - II</b></a></li><li><a href=\"https://www.youtube.com/watch?v=uR5urTx8S4E\" target=\"blank\"><b>Performance Best Practices with PageSpeed </b></a></li><li><a href=\"https://www.youtube.com/watch?v=tdIk2PztcL0\" target=\"blank\"><b>Firebug - I</b></a></li><li><a href=\"https://www.youtube.com/watch?v=f38GEk27uj4\" target=\"blank\"><b>Firebug - II</b></a></li><li><a href=\"https://www.youtube.com/watch?v=eogNKWLvzr4\" target=\"blank\"><b>Javascript Debugging</b></a></li></ul>"
+                    },
+					{
+                        "marker": "Day 6",
+						"type": "default",
+                        "title": "Day 6" ,
+                        "content": "</br><img src=\"images/html5_2.jpg\" align=\"center\"> <b>Level</b> : Intermediate <b>Category</b> : HTML</br> <b>Course Name</b> : HTML5 Web Storage, IndexedDB and File System<p>Learn to use HTML5 to persist data on the client using <b>Web Storage</b>(Local and Session storage), the client side object database known as <b>IndexedDB</b> and the in-browser file system.This course introduces you to each persistence medium and how to abstract away the complexities of using raw APIs	<a href=\"http://pluralsight.com/training/Courses/TableOfContents/html5-web-storage-indexeddb-file-system\" target=\"blank\"><b>Go to Pluralsight</b></a></p>"
+                    },
+					{
+                        "marker": "Day 7",
+						"type": "default",
+                        "title": "Day 7" ,
+                        "content": "</br><img src=\"images/js2.png\" align=\"left\"><b>Level</b> : Intermediate <b>Category</b> : Java Script</br><b>Course Name</b> : Structuring JavaScript Code.<p>This course walks through several key patterns that can be used to encapsulate and modularize JavaScript code.You’ll learn how closures and other techniques can be used to better organize your JavaScript code.<a href=\"http://pluralsight.com/training/Courses/TableOfContents/structuring-javascript\" target=\"blank\"><b>Go to Pluralsight</b></a></p><b>Second Half</b></br><b>Level</b> : Intermediate <b>Category</b> : HTML</br><b>Course Name</b>HTML5 Browser Caching<p>Browser caching is one of the least understood features of HTML5, but can make a dramatic improvement in your users' experience of your website. It can speed up your site for both online and offline applications, desktop and mobile.<a href=\"http://pluralsight.com/training/Courses/TableOfContents/html5-browser-caching\" target=\"blank\"><b>Go to Pluralsight</b></a></p>"
+                    },
+					{
+                        "marker": "Day 8",
+						"type": "default",
+                        "title": "Day 8" ,
+                        "content": "<img src=\"images/css3_1.jpg\"><b>Level</b> : Intermediate <b>Category</b> : CSS</br><b>Course Name</b>: CSS3 In-Depth<p>Learn how deep the CSS3 rabbit goes in the jan-packed course with CSS luminary Estelle .Estelle dives deep into the various components of CSS3 including: selectors, specificity, generated content, media queries, debugging, colors, fonts, shadows, text-effects, borders, background, gradients, transforms, transitions, animations.. and more.<a href=\"http://pluralsight.com/training/courses/TableOfContents?courseName=css3-in-depth\" target=\"blank\"><b>Go to Pluralsight</b></a>.</p>"
+                    },
+					{
+                        "marker": "Day 9",
+						"type": "default",
+                        "title": "Day 9" ,
+                        "content": "</br></br><img src=\"images/html5_2.jpg\" align=\"left\" width=\"200\"><b>First Half</b></br> <b>Level</b> : Advance <b>Category</b> : HTML<br> <b>Course Name</b> : Real-time Web Applications <p>At the end of this course you will have a concrete understanding of what real-time web applications are, which technologies are used to create these applications, and how to create them using HTML5 WebSockets. <a href=\"http://pluralsight.com/training/Courses/TableOfContents/real-time-web-applications\" target=\"blank\"><b>Go to Pluralsight</b></a>.</p><b>Second Half</b><br><img src=\"images/js2.png\" align=\"left\" width=\"100\"><b>Level</b> : Intermediate <b>Category</b> : Java Script</br><b>Course Name</b>: Introduction to JavaScript & jQuery<p>Learn basic of JQuery - how to select and manipulate DOM, how to make ajax call etc.<a href=\http://pluralsight.com/training/courses/TableOfContents?courseName=introduction-javascript-jquery\" target=\"blank\"><b>Go to Pluralsight</b></a>.</p>"
+                    },
+					{
+                        "marker": "Day 10",
+						"type": "default",
+                        "title": "Day 10" ,
+                        "content": "</br><img src=\"images/webapidesign.jpg\" align=\"left\"><b>First Half</b><br> <b>Level</b> : Advance <b>Category</b> : Design<br> <b>Course Name</b> : Web API Design <p>Designing APIs for use over the web is a key part of most projects these days. Knowing the best way to design them with longevity, testability and reliability in mind is important. This course will show you how. <a href=\"http://pluralsight.com/training/courses/TableOfContents?courseName=web-api-design\" target=\"blank\"><b>Go to Pluralsight</b></a>.</p><b>Second Half</b><br> <p>Revision ....</p>"
+                    },
+					{
+                        "marker": "Day 11",
+						"type": "default",
+                        "title": "Day 11" ,
+                        "content": "</br><img src=\"images/js.png\" align=\"right\"><b>First Half</b><br> <b>Level</b> : Advance <b>Category</b> : Design<br> <b>Course Name</b> : JavaScript Design Patterns <p>Useful design patterns for JavaScript development. <a href=\"http://pluralsight.com/training/Courses/TableOfContents/javascript-design-patterns\" target=\"blank\"><b>Go to Pluralsight</b></a>.</p><b>Second Half</b><br><img src=\"images/css.jpg\" align=\"right\"><b>Level</b> : Advance  <b>Category</b> : HTML <b>Course Name</b> : A Better CSS: LESS and SASS <p>LESS and SASS can style sheets more readable, maintainable and easier to write.<a href=\"http://pluralsight.com/training/Courses/TableOfContents/better-css\" target=\"blank\"><b>Go to Pluralsight</b></a></p>"
+                    },
+					{
+                        "marker": "Day 12",
+						"type": "default",
+                        "title": "Day 12" ,
+                        "content": "<img src=\"images/angular2.jpg\"></br><b>Level</b> : Intermediate <b>Category</b> : Frameworks</br><b>Course Name</b>: AngularJS: Get Started<p>This course demonstrates how to use the essential abstractions of AngularJS, including modules, controllers, directives, and services.<a href=\"http://pluralsight.com/training/Courses/TableOfContents/angularjs-get-started\" target=\"blank\"><b>Go to Pluralsight</b></a>.</p>"
+                    },
+					{
+                        "marker": "Day 13",
+						"type": "default",
+                        "title": "Day 13" ,
+                        "content": "<img src=\"images/angular2.jpg\"></br><b>Level</b> : Advance <b>Category</b> : Frameworks</br><b>Course Name</b>: Angular Best Practices<p>This course will help you take the next step in your development by showing you best practices when developing web applications with AngularJS.<a href=\"http://pluralsight.com/training/Courses/TableOfContents/angular-best-practices\" target=\"blank\"><b>Go to Pluralsight</b></a>.</p>"
+                    },
+					{
+                        "marker": "Day 14",
+						"type": "default",
+                        "title": "Day 14" ,
+                        "content": "<img src=\"images/html5_2.jpg\"></br><b>Level</b> : Advance <b>Category</b> : Design</br><b>Course Name</b>: Responsive Web Design<p>A pioneer in responsive web design, Ben Callahan, leads you through the process of what it means to build a web site in the 21st century. Ben tackles RWD process, prototyping and patterns down to specific coding tactics with media queries and responsive CSS.<a href=\"http://pluralsight.com/training/courses/TableOfContents?courseName=responsive-web-design\" target=\"blank\"><b>Go to Pluralsight</b></a>.</p>"
+                    },
+					{
+                        "marker": "Day 15",
+						"type": "default",
+                        "title": "Day 15" ,
+                        "content": "</br></br><img src=\"images/bootstrap.jpg\" align=\"left\" width=\"100\"><b>First Half</b></br><b>Level</b> : Intermediate <b>Category</b> : Frameworks</br><b>Course Name</b>: Bootstrap 3<p>Building great looking websites that work well with different sized devices can be a challenge. Twitter's Bootstrap 3 can help you achieve a great looking and performing web site.<a href=\http://pluralsight.com/training/courses/TableOfContents?courseName=bootstrap-3\" target=\"blank\"><b>Go to Pluralsight</b></a>.</p><b>Second Half</b></br><b>Revision...</b>"
+                    },
+					{
+                        "marker": "Day 16",
+						"type": "default",
+                        "title": "Day 16" ,
+                        "content": "</br><img src=\"images/angular.jpeg\" align=\"left\"><b>First Half</b><br> <b>Level</b> : Advance <b>Category</b> : Frameworks<br> <b>Course Name</b> : Application Building Patterns with AngularJS <p>Useful design patterns for Angular JS development. <a href=\"http://pluralsight.com/training/Courses/TableOfContents/show-me-angular\" target=\"blank\"><b>Go to Pluralsight</b></a>.</p><b>Second Half</b><br><b>Level</b> : Advance  <b>Category</b> : HTML <b>Course Name</b> : Testing AngularJS From Scratch <p>A complete guide to Behavior Driven Development with Angular and Jasmine.<a href=\"http://pluralsight.com/training/Courses/TableOfContents/testing-angularjs-from-scratch\" target=\"blank\"><b>Go to Pluralsight</b></a></p>"
+                    },
+					{
+                        "marker": "Day 17",
+						"type": "youtube-video",
+                        "title": "Day 17" ,
+						"youtubeId": "L0pjVcIsU6A" ,
+                        "content": "<b>Level</b> : Advance <b>Category</b> : Tools<br> <ul><li><a href=\"https://www.youtube.com/watch?v=GJmFG4ffJZU\" target=\"blank\"><b>Node.js - I</b></a></li><li><a href=\"https://www.youtube.com/watch?v=9Ui3DaNO7lE\" target=\"blank\"><b>Node.js - II</b></a></li><li><a href=\"https://www.youtube.com/watch?v=jxJk9d34rBI\" target=\"blank\"><b>Node.js - III</b></a></li><li><a href=\"https://www.youtube.com/watch?v=txW0rKTYVK4\" target=\"blank\"><b>Node.js - IV</b></a></li><li><a href=\"https://www.youtube.com/watch?v=WkJyEBz0PTY\" target=\"blank\"><b>Node.js - V</b></a></li><li><a href=\"https://www.youtube.com/watch?v=mtDK4jf4RS0\" target=\"blank\"><b>Node.js - VI</b></a></li><li><a href=\"https://www.youtube.com/watch?v=L0pjVcIsU6A\" target=\"blank\"><b>Advance Node.js</b></a></li></ul>"
+                    },
+					{
+                        "marker": "Day 18",
+						"type": "youtube-video",
+                        "title": "Day 18" ,
+						"youtubeId": "GJmFG4ffJZU" ,
+                        "content": "<b>Level</b> : Advance <b>Category</b> : Tools<br> <ul><li><a href=\"https://www.youtube.com/watch?v=eAkSMo2o23s\" target=\"blank\"><b>NPM</b></a></li><li><a href=\"http://pluralsight.com/training/courses/TableOfContents?courseName=bower-fundamentals\" target=\"blank\"><b>Bower</b></a></li><li><a href=\"https://www.youtube.com/watch?v=lGMmkQEJZxU\" target=\"blank\"><b>Grunt - I</b></a></li><li><a href=\"https://www.youtube.com/watch?v=Dr0tZjUUqyo\" target=\"blank\"><b>Grunt - II</b></a></li><li><a href=\"https://www.youtube.com/watch?v=gKiaLSJW5xI\" target=\"blank\"><b>Yeoman and Grunt</b></a></li></ul>"
+                    },
+					{
+                        "marker": "Day 19",
+						"type": "default",
+                        "title": "Day 19" ,
+                        "content": "<img src=\"images/javascript_call.png\"><b>Level</b> : Advance <b>Category</b> : Framework</br><b>Course Name</b>: Building AngularJS and Node.js Apps with the MEAN Stack<p>Learn to build an end to end application with Angular, Node, Express and Mongo<a href=\"http://pluralsight.com/training/courses/TableOfContents?courseName=building-angularjs-nodejs-apps-mean\" target=\"blank\"><b>Go to Pluralsight</b></a>.</p>"
+                    },
+					{
+                        "marker": "Day 20",
+						"type": "default",
+                        "title": "Day 20" ,
+                        "content": "<img src=\"images/htmlcssjava.png\" width=\"250\"></img><p><b>Revision...</b></p>"
+                    }
+                ];
+    
+                $(".timeline-container").fancyTimeline({
+                    initPos: 0,
+                    data: dates
+                });
+            });
+        </script>
+    </body>
+</html>
+
+

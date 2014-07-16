@@ -1,0 +1,23 @@
+How internet work
+
+Browser and Web server
+
+Web Browser
+Rendering Engine, Java Script Runtime (V8 Engine), Web API (HTML5)
+css - normaliize and reset
+js
+tags - semantic vs display
+display data
+images
+audio
+video
+
+Forms
+
+http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/
+
+HTTP fundamentals
+
+css
+
+bootstrap and foundation
